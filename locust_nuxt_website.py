@@ -20,7 +20,7 @@ class RandomSitemapWalk(TaskSet):
 
 class AwesomeUser(HttpUser):
     tasks = [RandomSitemapWalk]
-    host = "https://uclalibrary.library.ucla.edu/"
+    host = "https://uclalibrary.netlify.app/"
     
     min_wait = 1  * 1000
     max_wait = 10 * 1000

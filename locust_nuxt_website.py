@@ -13,7 +13,7 @@ class RandomSitemapWalk(TaskSet):
         for loc in pq.find('loc'):
             self.sitemap_links.append(PyQuery(loc).text())
 
-    @task(10)
+    @task
     def load_page(self):
         url = random.choice(self.sitemap_links)
         r = self.client.get(url)
